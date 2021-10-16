@@ -1,0 +1,219 @@
+:root {
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -----Elementos Base----- */
+body{
+    background: var(--preta);
+    font-family: 'Jost', sans-serif;
+    color:white;
+}
+
+.fundo{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/vingadores.jpg');
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+header .container {
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+       
+}
+
+.opacidade {
+    background: rgba(0,0,0,.50);
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Jost', sans-serif;
+    font-size:40px;
+    
+}
+
+header a{
+    text-decoration:none ;
+}
+
+header nav a {
+    text-decoration: none;
+    color:rgb(206, 205, 205);
+    margin-right: 20px;
+    font-weight: 200px;
+}
+
+header nav a:hover{
+    color: #ffffff;
+    font-weight: 200;
+    
+}
+
+/*-------------Filme Principal ------------------*/
+
+.filme-principal{
+    font-size: 16px;
+    /*background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/vingadores.jpg');*/
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    line-height: 32px;
+    font-size: 22px;
+    font-weight: 200;
+    
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 56px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    line-height: 62px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+    border-radius: 100px;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i {
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+
+.item{
+    transition: all 0.7s ease;
+    
+}
+.item:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*-------------Box-Filmes e Carrosel---------------------*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carrosel-filmes{
+    margin-top: 20px;
+    
+}
+
+.carrosel-filmes h2{
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+/*-------------Rodapé-----------------------*/
+footer{
+    text-align: center;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 3px solid rgb(63, 63, 63);
+}
+
+.rodape ol {
+    margin:50px;
+    list-style-type: none;
+}
+.rodape ol li {
+    padding: 8px;
+}
+.redes-socias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.redes-socias i{
+    border:1px solid white;
+    margin: 0 5px;
+    padding: 8px;
+    color:white;
+    border-radius: 50px;
+    
+}
+
+.redes-socias i:hover{
+    background-color: black;
+    color:white;
+}
+
+
+/* configuração padrão da barra de rolgem para diversos navegadores */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #e50914 #141414;;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #141414;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #e50914;
+    border-radius: 20px;
+    border: 3px solid #141414;
+  }
+   
+  
