@@ -21,6 +21,12 @@ body{
     
 }
 
+header {
+    position: fixed;
+    width:100vw;
+    z-index: 9999;
+}
+
 header .container {
     
     display:flex;
@@ -31,7 +37,7 @@ header .container {
 }
 
 .opacidade {
-    background: rgba(0,0,0,.50);
+    background: rgba(0,0,0,0.8);
 }
 
 header .logo {
@@ -98,6 +104,7 @@ header nav a:hover{
     font-size: 12px;
     transition: .3s ease all;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .botao:hover{
@@ -123,7 +130,11 @@ header nav a:hover{
     
 }
 .item:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(0.9,0.9);
+    transition: 0.2s ease-in;
+    outline: 4px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /*-------------Box-Filmes e Carrosel---------------------*/
@@ -133,16 +144,17 @@ header nav a:hover{
     width: 100%;
     display: block;
     border-radius: 10px;
-}
-
-.carrosel-filmes{
-    margin-top: 20px;
     
 }
 
-.carrosel-filmes h2{
-    margin-bottom:10px;
-    margin-left: 20px;
+
+.carrosel-filmes{
+    margin: 20px 20px 0px 20px
+    
+}
+
+.categorias{
+    margin: 20px 0px 20px 0px;
 }
 /*-------------Rodapé-----------------------*/
 footer{
@@ -154,19 +166,19 @@ footer{
     justify-content: center;
     
 }
-.rodape {
+.sitemap {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 80px;
     border-top: 3px solid rgb(63, 63, 63);
 }
 
-.rodape ol {
+.sitemap ol {
     margin:50px;
     list-style-type: none;
 }
-.rodape ol li {
+.sitemap ol li {
     padding: 8px;
 }
 .redes-socias{
